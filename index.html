@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- MAIN STYLES-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- SWIPER JS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/7c6ecdb88c.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./js/index.js" defer></script>
+
+    <title>Maharlika Jacksonville</title>
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="brand-title">
+                <h3><a href="#">Maharlika</a></h3>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- HERO IMAGE -->
+        <section class="hero">
+            <figure>
+                <img src="./img/maharlika-tiny.jpg" alt="Maharlika Logo">
+            </figure>
+        </section>
+        
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="content-wrapper">
+                <h1>Mabuhay!</h1>
+                <p>Come dine with us at Maharlika - Jacksonville, Florida's favorite family
+                owned and operated Filipino restaurant. Our kitchen serves up authentic
+                Filipino flavors, just like Lola used to make. Masarap! If you're not too
+                full, grab a Tanduay cocktail or San Miguel from our full bar and head to 
+                the dance floor for line dancing or karaoke. Our spacious event hall is 
+                available to rent for private parties of all occasions. Bring the whole pamilya!
+                </p>
+            </div>
+        </div>
+
+        <!-- IMAGE CAROUSEL -->
+
+        <div class="carousel-container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/pork-belly.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/shrimp-sinigang.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/soup.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/calderata.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/full-table.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/lumpia-and-pancit.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>   
+                            <img src="img/bar.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Contact</h3>
+            <address>
+                <a href="mailto:####"><i class="fa-regular fa-envelope"></i></a>
+            </address>
+            <a href="https://www.instagram.com/maharlika.jax.bar/"><i class="fa-brands fa-instagram"></i></a>
+            <p>904-xxx-xxxx</p>
+        </div>
+
+        <div class="hours">
+            <h3>Hours</h3>
+            <p>Monday - Sunday</p>
+            <p>xxAM - xxPM</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView:1,
+            spaceBetween:10,
+            breakpoints: {
+                768: {
+                    slidesPerView:2,
+                    spaceBetween:20
+                },
+                1024: {
+                    slidesPerView:3,
+                    spaceBetween:30
+                }
+            },
+            freeMode:true,
+            centeredSlides:true,
+            autoplay: {
+                delay:1500,
+                disableOnInteraction:true,
+            },
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+            },
+        });
+    </script>    
+</body>
+</html>
